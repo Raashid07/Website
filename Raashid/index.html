@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul  id="sidemenu">
+                    <li> <a href="#header"> Home</a></li>
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#Services">Services</a></li>
+                    <li> <a href="#Portfolio">Portfolio</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                
+                <i class="fa-solid fa-bars"></i>
+            </nav>
+            <div class="header-text" onclick="openmenu()">
+                <p>Front-End Developer</p>
+                <h1>Hi, I'm <span>Raashid</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- //about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Passionate and skilled Front-End Developer with  designing and implementing responsive, user-friendly websites and web applications. Proficient in HTML, CSS, JavaScript, and modern front-end frameworks like React.<p>Committed to continuous learning and staying updated with the latest industry trends and technologies. Excellent problem-solving skills, with a collaborative mindset and ability to work effectively in fast-paced environments.</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul><li><span>Front-End</span><br>Website Developer</li></ul>
+                        <ul><li><span>Web Development</span><br>Website app Developer</li></ul>
+                        <ul><li><span>Wordpress</span><br>Elementor Pro</li></ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul><li><span>Front-End</span><br>Website Developer</li></ul>
+                        <ul><li><span>Web Development</span><br>Website app Developer</li></ul>
+                        <ul><li><span>Wordpress</span><br>Elementor Pro</li></ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul><li><span>2014</span><br>10th</li></ul>
+                        <ul><li><span>2016</span><br>12th Science</li></ul>
+                        <ul><li><span>2019</span><br>B.tech (Information technology)</li>shivaji University </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services -->
+     <div id="Services">
+        <div class="class container">
+            <h1 class="sub-title"> My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus corporis qui alias repellendus ipsum voluptatem odio magnam quaerat. Laboriosam, quos cum? Nobis provident numquam nesciunt ipsam eveniet quasi eius velit.</p>
+                    <a href="#"> Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Front-End Website</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus corporis qui alias repellendus ipsum voluptatem odio magnam quaerat. Laboriosam, quos cum? Nobis provident numquam nesciunt ipsam eveniet quasi eius velit.</p>
+                    <a href="#"> Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus corporis qui alias repellendus ipsum voluptatem odio magnam quaerat. Laboriosam, quos cum? Nobis provident numquam nesciunt ipsam eveniet quasi eius velit.</p>
+                    <a href="#"> Learn More</a>
+                </div>
+
+            </div>
+        </div>
+     </div>
+      <!-- Portfolio -->
+       <div id="Portfolio">
+        <div class="container">
+            <h1 class="sub-title"> My work</h1>
+            <div class=" work-list">
+                <div class="work">
+                    <img src="work-1.png">
+                    <div class="layer">
+                        <h3>Scoial Media app</h3>
+                        <p>The  App connects you to the talented prople around the world.Download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png">
+                    <div class="layer">
+                        <h3>Music app</h3>
+                        <p>The  App connects you to the talented prople around the world.Download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.png">
+                    <div class="layer">
+                        <h3>online Shopping app</h3>
+                        <p>The  App connects you to the talented prople around the world.Download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn"> See More</a>
+
+        </div>
+       </div>
+       <!-- Contact -->
+        <div id="contact">
+            <div class="contanier">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i></i>raashid0703@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i></i>7887833614</p>
+                        <div class="socia-icons">
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="my-cv.pdf"  download class="btn btn2">Download Cv</a>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="text" name="email" placeholder="Your email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Raashid. Made with <i class="fa-solid fa-heart"></i></p>
+            </div>
+        </div>
+ <script>
+
+     var tablinks=document.getElementsByClassName("tab-links")
+     var tabcontents=document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+ </script>
+ <script>
+     var sidemenu = document.getElementById("sidemenu");
+
+     function openmenu(){
+        sidemenu.style.right="0";
+     }
+     function closemenu(){
+        sidemenu.style.right="-200px";
+     }
+ </script>
+</body>
+</html>
